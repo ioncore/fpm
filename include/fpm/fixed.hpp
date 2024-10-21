@@ -79,6 +79,11 @@ public:
         return m_value;
     }
 
+    constexpr inline BaseType& raw_value() noexcept
+    {
+        return m_value;
+    }
+
     //! Constructs a fixed-point number from another fixed-point number.
     //! \tparam NumFractionBits the number of bits used by the fraction in \a value.
     //! \param value the integer fixed-point number
